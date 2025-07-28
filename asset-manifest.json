@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/proctor/static/css/main.f855e6bc.css",
+    "main.js": "/proctor/static/js/main.30e98cd6.js",
+    "static/js/453.b21a91d2.chunk.js": "/proctor/static/js/453.b21a91d2.chunk.js",
+    "index.html": "/proctor/index.html",
+    "main.f855e6bc.css.map": "/proctor/static/css/main.f855e6bc.css.map",
+    "main.30e98cd6.js.map": "/proctor/static/js/main.30e98cd6.js.map",
+    "453.b21a91d2.chunk.js.map": "/proctor/static/js/453.b21a91d2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.30e98cd6.js"
+  ]
+}
