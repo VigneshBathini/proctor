@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Navigate, Routes } from 'react-router-dom';
+import Login from './login';
+import FirstPage from './Admin/Firstpage';
+import ATimeSlot from './Admin/ATimeslot';
+import ExamPage from './Student/ExamPage';
+import StudentPage from './Student/StudentPage';
+import Questions from './Admin/Questions';
+import DQuestions from './Student/DQuestions';
+import AdminDashboard from './Admin/AdminDashboard';
+import StudentDashBoard from './Student/StudentDashBoard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Login />} />
+   
+        <Route path='/firstPage' element={<FirstPage />} />
+        <Route path='/firstPage/atimeslot' element={<ATimeSlot/>} />
+        <Route path='/studentpage' element={<StudentPage/>} />
+        {/* <Route path='/' element={<ExamPage/>} /> */}
+        <Route path='/studentpage/exampage' element={<ExamPage/>} />
+        <Route path='/dquestions' element={<DQuestions/>} />
+        <Route path='/questions' element={<Questions/>} />
+        <Route path='/admindashboard' element={<AdminDashboard/>} />
+        <Route path='/studentDashboard'element={<StudentDashBoard/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

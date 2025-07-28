@@ -1,0 +1,51 @@
+[
+  
+  {
+    "id": "stu001",
+    "name": "Thejasree",
+    "email": "thejasree@example.com",
+        "role": "student"
+
+
+  },
+  {
+        "id": "stu002",
+    "name": "Krishna",
+    "email": "krishna@example.com",
+        "role": "student"
+
+
+  },
+  {
+    "id": "stu003",
+    "name": "Sneha",
+    "email": "sneha@example.com",
+        "role": "student"
+
+
+  },
+  {
+    "id": "stu004",
+    "name": "Dev",
+    "email": "dev@example.com",
+        "role": "student"
+
+
+  },
+  {
+    "id": "stu005",
+    "name": "Priya",
+    "email": "priya@example.com",
+            "role": "student"
+
+
+  },
+  {
+     "id": "a001",
+    "name": "Admin",
+    "email": "rahul@example.com",
+        "role": "admin"
+
+  }
+  
+]

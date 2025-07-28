@@ -1,0 +1,32 @@
+[
+  {
+    "id": "stu001",
+    "name": "Thejasree Venigalla",
+    "email": "thejasree@example.com"
+
+  },
+  {
+    "id": "stu002",
+    "name": "Krishna",
+    "email": "krishna@example.com"
+
+  },
+  {
+    "id": "stu003",
+    "name": "Sneha",
+    "email": "sneha.mehta@example.com"
+
+  },
+  {
+    "id": "stu004",
+    "name": "Dev",
+    "email": "dev@example.com"
+
+  },
+  {
+    "id": "stu005",
+    "name": "Priya Sharma",
+    "email": "priya.sharma@example.com"
+
+  }
+]
