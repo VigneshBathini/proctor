@@ -259,13 +259,21 @@ const DQuestions = () => {
         }
 
         // Load models locally with detailed error handling
+        const modelUrl = process.env.PUBLIC_URL + '/models';
         try {
-          console.log('Attempting to load face-api.js models from /models...');
-          await faceapi.nets.tinyFaceDetector.loadFromUri('/models');
+          // console.log('Attempting to load face-api.js models from /models...');
+          // await faceapi.nets.tinyFaceDetector.loadFromUri('/models');
+          // console.log('Tiny face detector model loaded successfully.');
+          // await faceapi.nets.faceLandmark68Net.loadFromUri('/models');
+          // console.log('Face landmark 68 model loaded successfully.');
+          // console.log('face-api.js models loaded successfully from /models');
+          await faceapi.nets.tinyFaceDetector.loadFromUri(modelUrl);
           console.log('Tiny face detector model loaded successfully.');
-          await faceapi.nets.faceLandmark68Net.loadFromUri('/models');
+
+          await faceapi.nets.faceLandmark68Net.loadFromUri(modelUrl);
           console.log('Face landmark 68 model loaded successfully.');
-          console.log('face-api.js models loaded successfully from /models');
+
+          console.log('face-api.js models loaded successfully from', modelUrl)
         } catch (error) {
           console.error('Failed to load models from /models:', error);
           console.error('Error details:', {
